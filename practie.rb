@@ -3,6 +3,10 @@
 # have exactly 4 characters.
 
 critters = ["Ant", "Bee", "slug", "bird", "beetle", "deer"]
+# from array, check all elements and only `puts` those who are 4 characters long
+# using iteration, go through each element
+# using if statement check if method .lenght == 4
+# if true, puts that element
 
 critters.each do |critter|
     if critter.length == 4
@@ -15,9 +19,12 @@ end
 #Print every word in all lowercase letters.
 
 states = ["Washington", "Oregon", "california", "COLORADO", "FLORIDA", "nevada"]
-
+# from array, check all elements and only `puts` those who are lowercase
+# using iteration, go through each element
+# using if statement check if method .chr to look at first character, then .downcase
+# if true, puts that element
 states.each do |state|
-    if state.chr == state.chr.upcase
+    if state.chr == state.chr.downcase
         puts state
     end
 end
@@ -25,8 +32,13 @@ end
 # 3. Given an array of strings, 
 # return only the words that begin with the letter "t".
 
-foods = ["tacos", "pizza", "tuna", "apple", "cheeseburger", "torta"]
 
+
+foods = ["tacos", "pizza", "tuna", "apple", "cheeseburger", "torta"]
+# from array, check all elements and only `puts` those who start with "t"
+# using iteration, go through each element
+# using if statement check if method .chr to look at first character == "t"
+# if true, puts that element
 foods.each do |food|
     if food.chr == "t"
         puts food
@@ -37,8 +49,13 @@ end
 # Print only the words that include 
 # the letter combination "ing".
 
-activities = ["Fishing", "Run", "Climbing", "Walk", "Skiing", "Bike"]
 
+
+activities = ["Fishing", "Run", "Climbing", "Walk", "Skiing", "Bike"]
+# from array, check all elements and only `puts` those ending in "ing"
+# using iteration, go through each element
+# using if statement check if method .include? look for ("ing")
+# if true, puts that element
 activities.each do |active|
     if active.include?("ing")
         puts active
@@ -51,7 +68,10 @@ end
 # print something like "The next place I want to visit is New York City!" 
 
 cities = ["Paris", "London", "Australia", "New York", "Denver", "Vancouver"]
-
+# from array, check all elements and sort alphabetically, then place in sentence
+# first sort array by making it = to new variable
+# using iteration, go through each element in newly alphabeticalized array
+# using interpolation place the cities in a string
 alph_cities = cities.sort
 
 alph_cities.each do |city|
